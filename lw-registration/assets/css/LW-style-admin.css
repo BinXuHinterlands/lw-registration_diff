@@ -1,0 +1,47 @@
+.InvitationPackageBody {background: #ffffff none repeat scroll 0 0;border: 1px solid #cccccc;border-radius: 10px;box-shadow: 2px 2px 5px #cccccc;padding: 15px;overflow: hidden;}
+.InvitationPackageBody .InvitationPackageHeadingTitle {border-bottom: 1px solid #cccccc;font-size: 15px;font-weight: bold;margin-bottom: 5px;margin-top: 0;padding-bottom: 10px;padding-top: 0;}
+.InvitationTitleHead {font-size: 26px;font-weight: bold;margin-bottom: 20px;margin-top: 20px;}
+#LwInvitationForm label.error{color:#F00; font-weight:bold; font-size:12px;}
+.invitation_label {font-weight: 600;font-size: 14px;}
+.modal-title {font-size: 18px;font-weight: 600;text-transform: uppercase;}
+#lw_loader { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 1000000; background-color: rgba(255,255,255,0.8); text-align: center }
+#lw_loader #lw_loader_container { display: table; height: 100%; vertical-align: middle; width: 100% }
+#lw_loader #lw_loader_container_inner { display: table-cell; height: 100%; vertical-align: middle; width: 100% }
+#lw_loader #DM_css_loader { border: 14px solid #bbb; border-radius: 50%; border-top: 14px solid #030303; width: 50px; height:50px; -webkit-animation: spin 1s linear infinite; /* Safari */ animation: spin 1s linear infinite; margin: 0 auto }
+
+/* Safari */
+@-webkit-keyframes spin {  0% {
+-webkit-transform: rotate(0deg);
+}
+ 100% {
+-webkit-transform: rotate(360deg);
+}
+}
+ @keyframes spin {  0% {
+transform: rotate(0deg);
+}
+ 100% {
+transform: rotate(360deg);
+}
+}
+#lw_css_loader_text { font-size: 16px; font-weight: bold; margin-top: 15px; color: #000; }
+#lw_loader_data, #lw_loader_info_data { background: #fff; padding: 25px 50px; max-width: 500px; margin: 0 auto; border-radius: 10px; border: 1px solid #ccc; display: inline-block; box-shadow: 5px 5px 2px #ddd; width: auto }
+#lw_loader_info_data .LwFailedPopup .fa {font-size: 30px;text-align: center;background: #bf3a3a;color: #fff;border-radius: 100%;width: 50px;height: 50px;line-height: 52px;}
+#lw_loader_info_data .LwSuccessPopup .fa {font-size: 30px;text-align: center;background: #129e1a;color: #fff;border-radius: 100%;width: 50px;height: 50px;line-height: 52px;}
+#lw_loader_info_data .fa.success { color: green }
+#lw_loader_info_data .fa.failed { color: #990000 }
+#lw_loader_info_data_text { font-size: 16px; margin-top: 10px; color: #000 }
+.LwFailedPopup #lw_loader_info_data_text{ color:#bf3a3a;}
+.LwSuccessPopup #lw_loader_info_data_text{ color:#129e1a;}
+.badge0 {color: #fff;background-color: #343a40;}
+.badge1 {color: #fff;background-color: #dc3545;}
+.badge2 {color: #fff;background-color: #28a745;}
+
+.InvitationPackageBody .panel-title {background: #2271b1;color: #fff;padding: 11px;display: flex;align-items: center;position: relative;margin-bottom: 0px;}
+.InvitationPackageBody .panel-heading.active .panel-title{}
+.InvitationPackageBody .panel-title a,.InvitationPackageBody  .panel-title:hover a .panel-title a i {color: #fff !important;font-size: 15px !important;text-decoration: none !important;}
+.InvitationPackageBody .panel-body {padding: 15px;}
+.InvitationPackageBody .changable_string {display: inline-block;border: 1px solid #888;padding: 5px 10px;border-radius: 5px;margin: 5px 0px;background: #999;color: #fff;}
+.InvitationPackageBody  #email_templete_settings.row {margin-left:0px !important;margin-right:0px !important;}
+.InvitationPackageBody  #email_templete_settings.row .col-md-8 {padding-left:0px;}
+.InvitationPackageBody  .panel-collapse.in {display: block;border: 1px solid #2271b1;border-radius: 0 0 10px 10px;}

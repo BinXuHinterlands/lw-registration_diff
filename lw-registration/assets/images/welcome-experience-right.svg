@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 66 66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        mask: url(#mask);
+      }
+    </style>
+    <mask id="mask" x="-.98" y="-1.29" width="68.26" height="68.26" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <rect id="path-1" class="cls-1" x=".15" y="-.16" width="66" height="66" transform="translate(-1.13 1.18) rotate(-2)"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="Assets">
+    <g id="Group">
+      <g class="cls-2">
+        <path id="Path" class="cls-1" d="m36.1,26.56l21,2-21,1.98c-2.95.28-5.28,2.62-5.56,5.56l-2,21-1.98-21c-.28-2.95-2.62-5.28-5.56-5.56L-.02,28.54l21-1.98c2.95-.28,5.28-2.62,5.56-5.56L28.55-.02l1.98,21c.28,2.95,2.62,5.28,5.56,5.56h0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
