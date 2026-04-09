@@ -165,7 +165,7 @@ If you are over 18 this is a trusted adult that we can reach in case of an emerg
                <div class="lw_tabcontent">
                   <div class="lw-form-group">
                      <label>Create a username<span class="lw_required_label">*</span><div class="lw-tooltip">?<span class="lw-tooltiptext">This is the name that will appear within the Livewire community. Your username can use letters and up to five numbers. For safety reasons please don't include anything identifying such as part of your last name in your username</span></div></label>
-                     <input type="text" placeholder="Livewire Username" class="required user_3_consecutive username_valid"  id="lw_username"   name="lw_username" maxlength="100">
+                     <input type="text" placeholder="Livewire Username" class="required username_min_3 user_3_consecutive username_valid"  id="lw_username"   name="lw_username" maxlength="100">
                   <?php /*?>   <small class="lw_notes">This is the name that will appear within the Livewire community. For safety please do not include part of your last name in your username. Your username can use letters and up to five numbers.</small><?php */?>
                   </div>
                   <div class="lw-form-group">

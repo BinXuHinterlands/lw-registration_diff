@@ -1,19 +1,19 @@
 <?php 
 global $invitationTypes,$lw_general_settings,$current_user,$wpdb;
 
-$roles = $current_user->roles;
-$access_page = 1;
+// $roles = $current_user->roles;
+// $access_page = 1;
 
 
-if($current_user->ID>0 ){
-	$access_page = 0;
-	if(isset($_REQUEST['token']) && $_REQUEST['token']!="" && (in_array("administrator",$current_user->roles) || in_array("editor",$current_user->roles))){
-		$access_page = 1;
-	}
-}
-if($access_page==0){
-	echo "<div class='not_access'>Sorry you don't have access this page.</div>";
-}else{
+// if($current_user->ID>0 ){
+// 	$access_page = 0;
+// 	if(isset($_REQUEST['token']) && $_REQUEST['token']!="" && (in_array("administrator",$current_user->roles) || in_array("editor",$current_user->roles))){
+// 		$access_page = 1;
+// 	}
+// }
+// if($access_page==0){
+// 	echo "<div class='not_access'>Sorry you don't have access this page.</div>";
+// }else{
 $prePouplateData = array();
 
 	if(isset($_REQUEST['token']) && $_REQUEST['token']!=""){
@@ -63,4 +63,6 @@ $prePouplateData = array();
 	
 ?>
 
- <?php } ?>
+ <?php 
+// } 
+?>

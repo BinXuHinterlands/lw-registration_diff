@@ -288,6 +288,15 @@ jQuery(document).ready(function () {
   );
 
   jQuery.validator.addMethod(
+    "username_min_3",
+    function (value, element) {
+      var v = (value || "").trim();
+      return this.optional(element) || v.length >= 3;
+    },
+    "Username is too short, the minimum length is 3 characters."
+  );
+
+  jQuery.validator.addMethod(
     "user_3_consecutive",
     function (value, element) {
       const last_name = jQuery("#lw_last_name").val()|| "";
@@ -513,6 +522,30 @@ jQuery(document).ready(function () {
   var lw_form_type = jQuery("input[name='lw_form_type']").val();
   if (lw_form_type == "form_a" || lw_form_type == "form_c" || lw_form_type == "form_a_direct") {
     LwshowTab(LwcurrentTab);
+  }
+
+  if (jQuery.fn && jQuery.fn.validate && jQuery("#LwRegistrationForm").length) {
+    jQuery("#LwRegistrationForm").validate({
+      ignore: ":hidden:not(.select2-hidden-accessible)",
+    });
+
+    jQuery("#LwRegistrationForm").on("input blur", "#lw_username", function () {
+      var $el = jQuery(this);
+      var v = ($el.val() || "").trim();
+      if (v.length === 0) {
+        return;
+      }
+      $el.valid();
+    });
+
+    jQuery("#LwRegistrationForm").on("input blur", "#lw_last_name", function () {
+      var $username = jQuery("#lw_username");
+      var v = ($username.val() || "").trim();
+      if (v.length === 0) {
+        return;
+      }
+      $username.valid();
+    });
   }
 
   jQuery("body").append(

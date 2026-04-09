@@ -420,8 +420,15 @@ if (!class_exists('LW_REGISTRATION_FRONT_CLASS')) {
 					
 			}
 
+				$user_login = isset($user_login) ? sanitize_user(trim($user_login), true) : '';
+
 				if ( empty($user_login) || empty($postData['lw_password']) || empty($user_email) || empty($first_name) || empty($last_name) || !is_email($user_email) ) {
 					echo json_encode(array("message"=>"Required fields missing or invalid. Please fill in Username, Password, Email, First Name and Last Name.","status"=>0));
+					exit;
+				}
+
+				if ( strlen($user_login) < 3 ) {
+					echo json_encode(array("message"=>"Username is too short, the minimum length is 3 characters","status"=>0));
 					exit;
 				}
 		
